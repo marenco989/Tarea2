@@ -2,12 +2,14 @@ import math
 import threading, time
 
 array = {}
-
+n = 0
 #se crea una clase par ainicializar y poder trabajar con el hilo
 class hilo(threading.Thread):
     def __init__(self,s): #se inicializa el hilo
         self.__s = s
         threading.Thread.__init_(self)
+        inicial = time.time()
+        limite = inicial + self
         #Un único hilo desde el elemento 0 al X
         for x in range (start,end):
             array[n] = math.sqrt(array[n])
